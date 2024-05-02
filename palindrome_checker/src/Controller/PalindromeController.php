@@ -9,9 +9,9 @@ use Symfony\Component\HttpFoundation\Request;
 
 
 class PalindromeController extends AbstractController {
-    #[Route("/", name: "palindrome")]
+    #[Route("/palindrome", name: "palindrome")]
     public function checkPalindrome(Request $request): Response {
-        $input = $request->query->get("input", "");
+        $input = $request->query->get("pal", "");
         if ($input) {
             if (strrev($input) === $input) {
                 echo $input . " is a palindrome.";
