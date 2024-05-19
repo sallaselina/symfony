@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+
+{% block title %} Symfony Booksite {% endblock %}
+
+{% block body %}
+
+
+<a href="{{ path('create_book') }}" id="addBtn">Add a new book to the list</a>
+<div class="container">
+
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author</th>
+<th>Year</th>
+<th>Genre</th>
+<th>Description</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+{% for book in books %} 
+<td>{{ book.title }}</td>
+<td> {{ book.author }} </td>
+<td> {{ book.year }} </td>
+<td> {{ book.genre }} </td>
+<td> {{ book.description }} </td>
+<td>
+<a href="{{ path('update_book', {'id': book.id}) }}">Edit book</a> <br>
+<a href="{{ path('delete_book', {'id': book.id}) }}">Delete book</a>
+
+<form action="{{ path('delete_book', {'id': book.id}) }}" method="post" onsubmit="return confirm('Are you sure you want to delete?');">
+</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+{% endblock %}

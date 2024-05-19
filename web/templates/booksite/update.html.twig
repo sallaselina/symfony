@@ -1,0 +1,9 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<h1> Update book </h1>
+{{ form_start(form) }}
+{{ form_widget(form) }}
+<button>Save</button>
+<button><a href="{{ path ("booksite")}}">Back</button>
+{{ form_end(form) }}
+{% endblock %}

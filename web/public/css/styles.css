@@ -1,0 +1,105 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/./janko-ferlic-sfL_QOnmy00-unsplash.jpg);
+  font-family: "Pridi", sans-serif;
+}
+header {
+  background-color: #bf6836;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: antiquewhite;
+}
+
+a {
+  color: #403323;
+  font-size: 1.5rem;
+  text-decoration: double;
+}
+
+#addBtn {
+  background-color: #bf6836;
+  color: antiquewhite;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+table {
+  margin: 2rem;
+  width: 95%;
+  background-color: #73321a;
+  border-collapse: collapse;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+}
+th {
+  color: antiquewhite;
+}
+
+td {
+  padding: 1rem;
+  max-width: 200px;
+  background-color: antiquewhite;
+  font-size: large;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  color: antiquewhite;
+  justify-content: space-around;
+}
+label {
+  font-size: 1.5rem;
+}
+input {
+  padding: 1rem;
+  margin: 1rem 1rem 1rem 2rem;
+  border: 2px solid #73321a;
+  border-radius: 7px;
+  justify-content: flex-end;
+}
+
+label,
+input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+button {
+  width: 40%;
+  height: 50px;
+  background-color: #bf6836;
+  color: antiquewhite;
+  border: none;
+  padding: 1rem;
+  font-size: medium;
+  margin: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#backBtn {
+  font-size: smaller;
+}
