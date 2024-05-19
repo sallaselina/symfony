@@ -1,0 +1,47 @@
+body {
+  background-image: url(/./joanna-kosinska-1_CMoFsPfso-unsplash.jpg);
+  background-size: cover;
+  background-color: #aaf0d1;
+  font-family: "Nunito", sans-serif;
+  font-size: large;
+}
+
+h1 {
+  text-align: center;
+}
+input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  margin-left: 1rem;
+  align-items: center;
+}
+
+table {
+  padding: 1rem;
+  margin: 1rem;
+  border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+td,
+th,
+tr {
+  height: 100px;
+  width: 100px;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+}
